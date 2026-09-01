@@ -1,0 +1,7 @@
+services:
+  - type: worker
+    name: wbot
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python wbot.py
+    plan: free
